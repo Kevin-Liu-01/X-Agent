@@ -3,6 +3,13 @@
     "x-api": {
       "url": "http://127.0.0.1:8000/mcp",
       "description": "X/Twitter API via xmcp — for write operations: tweeting, retweeting, DMs, likes, follows, bookmarks. Start the server with ./start-xmcp.sh before using."
+    },
+    "xquik": {
+      "url": "https://xquik.com/mcp",
+      "headers": {
+        "x-api-key": "${XQUIK_API_KEY}"
+      },
+      "description": "Optional Xquik remote MCP for hosted X/Twitter reads, search, extraction, monitoring, and analytics. Set XQUIK_API_KEY before using."
     }
   }
 }
